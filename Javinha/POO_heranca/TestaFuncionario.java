@@ -14,5 +14,10 @@ public class TestaFuncionario {
         d2.visualizar();
         d3.visualizar();
         d4.visualizar();
+
+        FuncionarioGeral d5 = new FuncionarioGeral("Katarina","Gerente",55,67,3.000);
+
+        d5.receberSalario();
+        d5.descontarFerias();
     }
 }

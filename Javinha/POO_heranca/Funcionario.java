@@ -1,6 +1,6 @@
 package Javinha.POO_heranca;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome, cargo;
     private int idade;
     private float peso;

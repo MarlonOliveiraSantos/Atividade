@@ -1,6 +1,6 @@
 package Javinha.POO_heranca;
 
-public class Cliente {
+public abstract class Cliente {
 
         private String nome, cidade;
         private int idade;

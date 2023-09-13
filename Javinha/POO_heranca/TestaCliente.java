@@ -14,5 +14,12 @@ public class TestaCliente {
         c2.visualizar();
         c3.visualizar();
         c4.visualizar();
+
+        ClienteMaximo c5 = new ClienteMaximo("Katarina","SaoPaulo",55,67,1.75);
+
+        c5.resgatarBeneficios();
+        c5.comprar();
+
+
     }
 }
