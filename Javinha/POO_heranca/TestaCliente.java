@@ -1,7 +1,5 @@
 package Javinha.POO_heranca;
 
-import Javinha.POO.Cliente;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -9,7 +7,7 @@ public class TestaCliente {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
-        int opcao = 0;
+        int opcao;
 
 
         do {
@@ -27,7 +25,7 @@ public class TestaCliente {
                     c1.visualizar();
                     c2.visualizar();
                     c3.visualizar();
-                    c4.visualizar();
+
 
                     ClienteMaximo c5 = new ClienteMaximo("Katarina", "SaoPaulo", 55, 67, 1.75);
 

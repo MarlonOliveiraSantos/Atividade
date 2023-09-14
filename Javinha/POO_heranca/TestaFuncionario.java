@@ -1,6 +1,5 @@
 package Javinha.POO_heranca;
 
-import Javinha.POO.Funcionario;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -9,7 +8,7 @@ public class TestaFuncionario {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
-        int escolha = 0;
+        int escolha;
 
         do {
             System.out.println("Digite a opção 1 para continuar, caso não digite 2");
