@@ -2,19 +2,29 @@ package Javinha.POO_heranca;
 
 
 import java.util.InputMismatchException;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class TestaFuncionario {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
-        int escolha;
+        int opcao;
+        String funcionariosAntigos[] = new String[10];
+
+        Optional<String> checaNulo = Optional.ofNullable(funcionariosAntigos[5]);
+
+        if (checaNulo.isPresent()) {
+            String funcionariosAntigo = funcionariosAntigos[5].toLowerCase();
+            System.out.print(funcionariosAntigo);
+        } else
+            System.out.println("A palavra é nula!");
 
         do {
             System.out.println("Digite a opção 1 para continuar, caso não digite 2");
-            escolha = ler.nextInt();
+            opcao = ler.nextInt();
 
-            if (escolha == 1) {
+            if (opcao == 1) {
                 try {
                     Gerente d1 = new Gerente("Marlon", "Gerente", 23, 80, 1.500, "4");
                     Gerente d2 = new Gerente("Katarina", "Gerente", 55, 67, 3.000, "9");
@@ -42,7 +52,7 @@ public class TestaFuncionario {
                     System.out.println("\nSempre serei executada!\n");
                 }
 
-                } else if (escolha == 2) {
+                } else if (opcao == 2) {
                     System.exit(0);
                 } else {
                 throw new RuntimeException("Digite uma opção válida!");

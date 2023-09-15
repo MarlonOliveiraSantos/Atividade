@@ -1,6 +1,7 @@
 package Javinha.POO_heranca;
 
 import java.util.InputMismatchException;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class TestaCliente {
@@ -8,7 +9,15 @@ public class TestaCliente {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
         int opcao;
+        String clientesAntigos[] = new String[10];
 
+        Optional<String> checaNulo = Optional.ofNullable(clientesAntigos[5]);
+
+        if (checaNulo.isPresent()) {
+            String clientesAntigo = clientesAntigos[5].toLowerCase();
+            System.out.print(clientesAntigo);
+        } else
+            System.out.println("A palavra é nula!");
 
         do {
             System.out.println("Digite a opção 1 para continuar, caso não digite 2");
@@ -25,6 +34,7 @@ public class TestaCliente {
                     c1.visualizar();
                     c2.visualizar();
                     c3.visualizar();
+                    c4.visualizar();
 
 
                     ClienteMaximo c5 = new ClienteMaximo("Katarina", "SaoPaulo", 55, 67, 1.75);
