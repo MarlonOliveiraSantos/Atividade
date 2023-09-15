@@ -10,7 +10,7 @@ public class TestaFuncionario {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
         int opcao;
-        String funcionariosAntigos[] = new String[10];
+        String[] funcionariosAntigos = new String[10];
 
         Optional<String> checaNulo = Optional.ofNullable(funcionariosAntigos[5]);
 

@@ -9,7 +9,7 @@ public class TestaCliente {
         Scanner ler = new Scanner(System.in);
         boolean loop = true;
         int opcao;
-        String clientesAntigos[] = new String[10];
+        String[] clientesAntigos = new String[10];
 
         Optional<String> checaNulo = Optional.ofNullable(clientesAntigos[5]);
 
