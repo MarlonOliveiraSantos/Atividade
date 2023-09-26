@@ -16,9 +16,16 @@ public class Collections_lista01_1 {
             vetor.add(ler.nextLine());
         }
 
-        System.out.println("Listar todas as cores: " + vetor);
-        //Collections.sort(vetor[i]);
-        System.out.println("Ordenar todas as cores: " + vetor);
+        System.out.println("\nListar todas as cores:\n");
+        for (String s : vetor) {
+            System.out.println(s);
+        }
+
+        System.out.println("\nOrdenar todas as cores:\n");
+        Collections.sort(vetor);
+        for (String s : vetor) {
+            System.out.println(s);
+        }
 
     }
 }
